@@ -1,4 +1,12 @@
-<!-- Hero Section -->
+<?php
+use Livewire\Volt\Component;
+
+new class extends Component {
+    // Add properties or methods here if needed
+};
+?>
+
+<!-- Hero Section HTML -->
 <section class="bg-gradient-to-r from-primary to-secondary py-16 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-10 items-center">
