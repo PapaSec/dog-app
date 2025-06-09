@@ -1,6 +1,4 @@
-@extends('layouts.app') {{-- or your layout name --}}
-
+@extends('layouts.app')
 @section('content')
     @livewire('hero-section')
-    {{-- You can add more components below --}}
 @endsection

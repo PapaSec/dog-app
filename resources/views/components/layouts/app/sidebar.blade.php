@@ -92,5 +92,6 @@
     </main>
 
     @fluxScripts
+    @livewireScripts
 </body>
 </html>
