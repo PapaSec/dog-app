@@ -1,13 +1,5 @@
-<?php
-use Livewire\Volt\Component;
-
-new class extends Component {
-    // Add properties or methods here if needed
-};
-?>
-
 <!-- Hero Section HTML -->
-<section class="bg-gradient-to-r from-primary to-secondary py-16 text-white">
+<section class="bg-gradient-to-r from-blue-500 to-green-500 py-16 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-10 items-center">
             <div>
@@ -18,7 +10,7 @@ new class extends Component {
                 </p>
                 <div class="flex space-x-4">
                     <a href="#"
-                        class="bg-white text-primary px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-100 transition-colors">
+                        class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-100 transition-colors">
                         Shop Now
                     </a>
                     <a href="#"
