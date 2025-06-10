@@ -35,7 +35,7 @@
                    class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors">Home</a>
                 <a href="#"
                    class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors">Shop</a>
-                <a href="#" class="text-zinc-700 dark:text-zinc-200 hover:underline">Contact</a>
+                <a href="{{ route('contact') }}" class="text-gray-700 dark:text-gray-300 hover:text-primary font-medium transition-colors">Contact</a>
             </nav>
 
             <!-- Auth & Dark Mode -->
@@ -86,10 +86,8 @@
         </div>
     </header>
 
-    @livewire('hero-section')
-
     <!-- Page Content -->
-    <main class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {{ $slot }}
     </main>
 
