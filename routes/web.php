@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Livewire\Dogs\Index;
 use App\Livewire\Pages\Home;
+use App\Livewire\DogDetails;
 
 // 🏠 Public Landing Page (welcome.blade.php)
 Route::get('/', function () {
@@ -17,6 +18,10 @@ Route::get('/home', Home::class)
 
 // 🐶 Dog listing page
 Route::get('/dogs', Index::class)->name('dogs');
+
+// 🐶 Dog details page
+Route::get('/dogs/{dog}', DogDetails::class)->name('dogs.details');
+
 
 // 📄 Static Pages
 Route::view('/about', 'about')->name('about');
