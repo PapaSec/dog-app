@@ -4,17 +4,20 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             @foreach ($dogs as $dog)
-                <div class="bg-white dark:bg-zinc-800 rounded-lg shadow-md overflow-hidden">
-                    <img src="{{ $dog['image'] }}" alt="{{ $dog['name'] }}" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white">{{ $dog['name'] }}</h3>
-                        <p class="text-gray-600 dark:text-gray-300">{{ $dog['breed'] }}</p>
-                        <p class="mt-2 font-bold text-blue-500">R{{ number_format($dog['price'], 2) }}</p>
-                        <button class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded">
-                            View Details
-                        </button>
+                <a href="{{ route('dogs.details', $dog) }}" class="block">
+                    <div class="bg-white dark:bg-zinc-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                        <img src="{{ $dog['image'] }}" alt="{{ $dog['name'] }}" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold text-gray-800 dark:text-white">{{ $dog['name'] }}</h3>
+                            <p class="text-gray-600 dark:text-gray-300">{{ $dog['breed'] }}</p>
+                            <p class="mt-2 font-bold text-blue-500">R{{ number_format($dog['price'], 2) }}</p>
+                            <div
+                                class="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded text-center">
+                                View Details
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             @endforeach
         </div>
     </div>
