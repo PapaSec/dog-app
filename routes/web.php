@@ -5,6 +5,8 @@ use Livewire\Volt\Volt;
 use App\Livewire\Dogs\Index;
 use App\Livewire\Pages\Home;
 use App\Livewire\DogDetails;
+use App\Http\Livewire\Admin\DogIndex;
+use App\Http\Livewire\Admin\DogForm;
 
 // 🏠 Public Landing Page (welcome.blade.php)
 Route::get('/', function () {
@@ -20,7 +22,7 @@ Route::get('/home', Home::class)
 Route::get('/dogs', Index::class)->name('dogs');
 
 // 🐶 Dog details page
-Route::get('/dogs/{dog}', DogDetails::class)->name('dogs.details');
+Route::get(uri: '/dogs/{dog}', action: DogDetails::class)->name('dogs.details');
 
 
 // 📄 Static Pages
